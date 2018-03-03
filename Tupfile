@@ -1,1 +1,1 @@
-: foreach *.math |> ./gen-html.sh %f > %o |> %B.html
+: foreach *.tex |> ./gen-html.sh %f > %o |> %B.html
