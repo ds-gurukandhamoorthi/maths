@@ -8,25 +8,59 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/contrib/auto-render.min.js" integrity="sha256-HkMrKMLKQk4t1R2ofMAcLz72fWM2sshnx6215U+LgU0=" crossorigin="anonymous"></script>
 </head>
 <body>
-  Test file
-  Add line
-  <div id='math'></div>
-  <script>
-  katex.render("c^2 = a + b", document.getElementById('math'))
-  </script>
-
   <div id='test'>
-    This is just to tset math $math \frac12$
+$$
+f(x)=\frac{n_1(x_1-x)^2 +n_2(x_2-x)^2 + ... + n_p (x_p - x)^2}{N}
+$$
+$1/N$ is constant
+
+let us expand, for example:
+$$
+n_1(x_1 - x)^2
+=n_1((x_1)^2 - 2(x_1)x + x^2)
+$$
+if we differentiate this expression, we obtain:
+$$
+n_1(2x - 2x_1)
+$$
+In general, for any i in the interval $1...p$.
+
+if we differentiate $n_i(x_i - x)^2$ we would obtain  $2n_i(x - x_i)$
+
+So, 
+$$
+f'(x) = \frac{2n_1(x-x_1) + 2n_2(x-x_2) + ... + 2n_p(x-x_p)}{N}
+$$
+$$
+f'(x) = \frac{2n_1x-2n_1x_1 + 2n_2x-2n_2x_2 + ... + 2n_px-2n_px_p}{N}
+$$
+After some rearranging of terms, we can factorize the above expression into
+$$
+f'(x) = \frac{2x(n_1+n_2+...n_p)}{N} -\frac{2(n_1 x_1+n_2 x_2+...+n_p x_p)}{N}
+$$
+As we have $n_1 + n_2 + ... + n_p = N$,
+$$
+f'(x) = \frac{2xN}{N} -\frac{2(n_1 x_1+n_2 x_2+...+n_p x_p)}{N}
+$$
+$$
+f'(x) = 2x - 2\frac{(n_1 x_1+n_2 x_2+...+n_p x_p)}{N}
+$$
+
+$$
+f'(x) = 2x - 2\overline{x} = 2(x - \overline{x})
+$$
+with $\overline{x}$ being the weighted average of the terms
+
+
 
 
     </div>
-  another line
-  yet another line
   <script>
     renderMathInElement(
       document.getElementById('test'),
       {
         delimiters:[
+          {left: "$$", right: "$$", display:true}, //REMEMBER: The order of these two lines is important
           {left: "$", right: "$", display:false},
 
           ]
