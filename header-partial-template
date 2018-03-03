@@ -9,28 +9,3 @@
 </head>
 <body>
   <div id='math'>
-
-
-
-
-
-
-
-
-    </div>
-  <script>
-    renderMathInElement(
-      document.getElementById('math'),
-      {
-        delimiters:[
-          {left: "$$", right: "$$", display:true}, //REMEMBER: The order of these two lines is important
-          {left: "$", right: "$", display:false},
-
-          ]
-
-      }
-      );
-  </script>
-  
-</body>
-</html>
