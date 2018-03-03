@@ -1,1 +1,2 @@
 : foreach *.tex |> ./gen-html.sh %f > %o |> %B.html
+: foreach *.html |> ./gen-index.sh > %o |> index.html
