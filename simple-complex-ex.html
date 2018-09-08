@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" integrity="sha384-TEMocfGvRuD1rIAacqrknm5BQZ7W7uWitoih+jMNFXQIbNl16bO8OZmylH/Vi/Ei" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js" integrity="sha384-jmxIlussZWB7qCuB+PgKG1uLjjxbVVIayPJwi6cG6Zb4YKq0JIw+OMnkkEC7kYCq" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/contrib/auto-render.min.js" integrity="sha256-HkMrKMLKQk4t1R2ofMAcLz72fWM2sshnx6215U+LgU0=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id='math'>
+Left hand side
+<p>
+$$(3+2i)z$$
+$$= (3+2i)(x + iy)$$
+$$= (3x-2y)+i(2x+3y)$$
+
+Right hand side
+<p>
+$$2i\overline{z}-5i$$
+$$= 2i(x-iy)-5i$$
+$$= 2ix+2y-5i$$
+$$= 2y + i(2x-5)$$
+
+
+$$(3x-2y)+i(2x+3y) = 2y + i(2x-5)$$
+$$(3x-2y-2y)+i(2x+3y-2x+5) = 0$$
+$$(3x-4y)+i(3y+5) = 0$$
+
+Solve 3x - 4y = 0 and 3y + 5 = 0
+
+
+    </div>
+  <script>
+    renderMathInElement(
+      document.getElementById('math'),
+      {
+        delimiters:[
+          {left: "$$", right: "$$", display:true}, //REMEMBER: The order of these two lines is important
+          {left: "$", right: "$", display:false},
+
+          ]
+
+      }
+      );
+  </script>
+  
+</body>
+</html>
