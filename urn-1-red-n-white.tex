@@ -9,16 +9,18 @@ probab of getting white ball followed by white ball:$ \frac{n}{n+1} \times \frac
 prob(M) = sum of these two.
 <p>
 
-$$P(M) = \frac{1}{n+1} \times \frac{1}{n+1}  +  \frac{n}{n+1} \times \frac{n}{n+1}  $$
-$$P(M) = \frac{1}{(n+1)^2}  +  \frac{n^2}{(n+1)^2}$$
-$$ = \frac{n^2+1}{(n+1)^2}$$
+$$\begin{aligned}P(M) &= \frac{1}{n+1} \times \frac{1}{n+1}  +  \frac{n}{n+1} \times \frac{n}{n+1}  \\
+ &= \frac{1}{(n+1)^2}  +  \frac{n^2}{(n+1)^2}\\
+ &= \frac{n^2+1}{(n+1)^2}\\
+ \end{aligned}$$
 <p>
  N: 'Balls of different color'
- $$P(N) = 1- p(M)$$
- $$ = 1-\frac{n^2+1}{(n+1)^2}$$ 
- $$ = \frac{(n+1)^2-(n^2+1)}{(n+1)^2}$$ 
- $$ = \frac{n^2 + 2n + 1 - n^2 -1}{(n+1)^2}$$ 
- $$ = \frac{2n}{(n+1)^2}$$ 
+ $$\begin{aligned}P(N) &= 1- p(M)\\
+&= 1-\frac{n^2+1}{(n+1)^2}\\ 
+&= \frac{(n+1)^2-(n^2+1)}{(n+1)^2}\\ 
+&= \frac{n^2 + 2n + 1 - n^2 -1}{(n+1)^2}\\ 
+&= \frac{2n}{(n+1)^2}\\ 
+ \end{aligned}$$
 
  <p>
  2.a.
@@ -29,9 +31,10 @@ $$ = \frac{n^2+1}{(n+1)^2}$$
  <p>
 
  2.b.
-$$E(X) = Gain(M) \times P(M) + Gain(N) \times P(N)$$
-$$ =-(n+1)^2 \times \frac{n^2+1}{(n+1)^2} +  2(n+1)^2 \times \frac{2n}{(n+1)^2}$$ 
-$$ =-n^2-1 +  2 \times 2n$$ 
-$$ =-n^2+4n-1$$
+$$\begin{aligned}E(X) &= Gain(M) \times P(M) + Gain(N) \times P(N)\\
+&=-(n+1)^2 \times \frac{n^2+1}{(n+1)^2} +  2(n+1)^2 \times \frac{2n}{(n+1)^2}\\ 
+&=-n^2-1 +  2 \times 2n\\ 
+&=-n^2+4n-1\\
+\end{aligned}$$
 
  
