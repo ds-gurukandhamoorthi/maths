@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" integrity="sha384-TEMocfGvRuD1rIAacqrknm5BQZ7W7uWitoih+jMNFXQIbNl16bO8OZmylH/Vi/Ei" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js" integrity="sha384-jmxIlussZWB7qCuB+PgKG1uLjjxbVVIayPJwi6cG6Zb4YKq0JIw+OMnkkEC7kYCq" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/contrib/auto-render.min.js" integrity="sha256-HkMrKMLKQk4t1R2ofMAcLz72fWM2sshnx6215U+LgU0=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id='math'>
+Left hand side
+<p>
+$$\overline{\bigg(\frac{z}{z'}\bigg)}$$
+$$ = \overline{\bigg(\frac{x+iy}{x'+iy'}\bigg)}$$
+$$ = \overline{\bigg(\frac{(x+iy)(x'-iy')}{(x'+iy')(x'-iy')}\bigg)}$$
+$$ = \overline{\bigg(\frac{(x+iy)(x'-iy')}{(x'^2+y'^2)}\bigg)}$$
+$$ = \overline{\bigg(\frac{xx'+yy'+i(x'y-xy')}{(x'^2+y'^2)}\bigg)}$$
+$$ = \frac{xx'+yy'-i(x'y-xy')}{(x'^2+y'^2)}$$
+
+Right hand side
+<p>
+
+
+
+$$\frac{\overline{z}}{\enspace \overline{z'} \enspace}$$
+$$ = \frac{\overline{x+iy}}{\enspace \overline{x'+iy'} \enspace}$$
+$$ = \frac{x-iy}{\enspace x'-iy' \enspace}$$
+$$ = \frac{(x-iy)(x'+iy')}{\enspace (x'-iy')(x'+iy') \enspace}$$
+$$ = \frac{xx'+yy'-i(x'y-xy')}{\enspace (x'^2+y'^2) \enspace}$$
+    </div>
+  <script>
+    renderMathInElement(
+      document.getElementById('math'),
+      {
+        delimiters:[
+          {left: "$$", right: "$$", display:true}, //REMEMBER: The order of these two lines is important
+          {left: "$", right: "$", display:false},
+
+          ]
+
+      }
+      );
+  </script>
+  
+</body>
+</html>
