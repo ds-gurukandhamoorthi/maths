@@ -31,18 +31,12 @@ if we differentiate $n_i(x_i - x)^2$ we would obtain  $2n_i(x - x_i)$
 So, 
 $$\begin{aligned}
 f'(x) &= \frac{2n_1(x-x_1) + 2n_2(x-x_2) + ... + 2n_p(x-x_p)}{N}\\
-&= \frac{2n_1x-2n_1x_1 + 2n_2x-2n_2x_2 + ... + 2n_px-2n_px_p}{N}
-\end{aligned}
-$$
-After some rearranging of terms, we can factorize the above expression into
-$$
-f'(x) = \frac{2x(n_1+n_2+...n_p)}{N} -\frac{2(n_1 x_1+n_2 x_2+...+n_p x_p)}{N}
-$$
-As we have $n_1 + n_2 + ... + n_p = N$,
-$$\begin{aligned}
-f'(x) &= \frac{2xN}{N} -\frac{2(n_1 x_1+n_2 x_2+...+n_p x_p)}{N}\\
+&= \frac{2n_1x-2n_1x_1 + 2n_2x-2n_2x_2 + ... + 2n_px-2n_px_p}{N}\\
+&= \frac{2x(n_1+n_2+...n_p)}{N} -\frac{2(n_1 x_1+n_2 x_2+...+n_p x_p)}{N}\text{(After some rearranging of terms and then factorizing)}\\
+ &= \frac{2xN}{N} -\frac{2(n_1 x_1+n_2 x_2+...+n_p x_p)}{N} \text{(As we have $n_1 + n_2 + ... + n_p = N$)}\\
  &= 2x - 2\frac{(n_1 x_1+n_2 x_2+...+n_p x_p)}{N}\\
- &= 2x - 2\overline{x} = 2(x - \overline{x})\\
+ &= 2x - 2\overline{x} \\
+ &= 2(x - \overline{x})\\
 \end{aligned}
 $$
 with $\overline{x}$ being the weighted average of the terms
