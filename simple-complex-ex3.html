@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" integrity="sha384-TEMocfGvRuD1rIAacqrknm5BQZ7W7uWitoih+jMNFXQIbNl16bO8OZmylH/Vi/Ei" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js" integrity="sha384-jmxIlussZWB7qCuB+PgKG1uLjjxbVVIayPJwi6cG6Zb4YKq0JIw+OMnkkEC7kYCq" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/contrib/auto-render.min.js" integrity="sha256-HkMrKMLKQk4t1R2ofMAcLz72fWM2sshnx6215U+LgU0=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id='math'>
+<p>
+$$\begin{aligned}
+2z +i\overline{z} &= 4\\
+2(x+iy) + i(x-iy) &= 4\\
+2x +2iy +ix +y &= 4\\
+2x +y +i (x + 2y) &= 4\\
+\end{aligned}$$
+<p>
+$$
+\begin{cases}
+2x +y = 4\\
+x + 2y = 0
+\end{cases}
+$$
+<p>
+$$
+\begin{cases}
+2x +y = 4\\
+x = - 2y 
+\end{cases}
+$$
+<p>
+
+
+$$ 2(-2y) + y = 4 $$
+$$ -4y +y = 4 $$
+$$ -3y = 4$$
+$$ \boxed{y = \frac{-4}{3}}$$
+
+<p>
+$$ x = -2(\frac{-4}{3})$$
+$$\boxed{ x = \frac{8}{3}} $$
+
+<p>
+
+Verification $ z = \frac{8}{3}-i\frac{4}{3} $ ?
+$$\begin{aligned}
+ 2z +i\overline{z} &= 2\bigg(\frac{8}{3}-i\frac{4}{3}\bigg)  + i \bigg(\frac{8}{3}+i\frac{4}{3}\bigg) \\
+ &= \frac{16}{3}-i\frac{8}{3}  + i\frac{8}{3}-\frac{4}{3} \\
+ &= \frac{12}{3}\\
+ &= 4
+
+\end{aligned}$$
+
+$$ \boxed{z = \frac{8}{3}-i\frac{4}{3}} $$
+    </div>
+  <script>
+    renderMathInElement(
+      document.getElementById('math'),
+      {
+        delimiters:[
+          {left: "$$", right: "$$", display:true}, //REMEMBER: The order of these two lines is important
+          {left: "$", right: "$", display:false},
+
+          ]
+
+      }
+      );
+  </script>
+  
+</body>
+</html>
