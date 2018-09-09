@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" integrity="sha384-TEMocfGvRuD1rIAacqrknm5BQZ7W7uWitoih+jMNFXQIbNl16bO8OZmylH/Vi/Ei" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js" integrity="sha384-jmxIlussZWB7qCuB+PgKG1uLjjxbVVIayPJwi6cG6Zb4YKq0JIw+OMnkkEC7kYCq" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/contrib/auto-render.min.js" integrity="sha256-HkMrKMLKQk4t1R2ofMAcLz72fWM2sshnx6215U+LgU0=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id='math'>
+<p>
+$$\begin{aligned}
+    (2-i)z-2i &= iz + 2 -3i\\
+    2z - iz &= iz + 2 -i\\
+    2z - 2iz &= 2 -i\\
+    z(2 - 2i) &= 2 -i\\
+    z &= \frac{2 -i}{2-2i}\\
+     &= \frac{(2 -i)(2+2i)}{8}\\
+     &= \frac{2(2 -i)(1+i)}{8}\\
+     &= \frac{(2 -i)(1+i)}{4}\\
+     &= \frac{2+2i-i+1}{4}\\
+     &= \frac{3+i}{4}\\
+     &= \frac{3}{4}+i\frac{1}{4}\\
+
+
+
+
+
+\end{aligned}$$
+    </div>
+  <script>
+    renderMathInElement(
+      document.getElementById('math'),
+      {
+        delimiters:[
+          {left: "$$", right: "$$", display:true}, //REMEMBER: The order of these two lines is important
+          {left: "$", right: "$", display:false},
+
+          ]
+
+      }
+      );
+  </script>
+  
+</body>
+</html>
