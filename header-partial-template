@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title></title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0-rc.1/katex.min.css" integrity="sha256-xhfwXOVSNtfqllKqZeJXC77C4gHlToAsBZ1VPuo78s0=" crossorigin="anonymous" />
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0-rc.1/katex.min.js" integrity="sha256-pspcItwUMvvmTm21RgPNGHoFDNXjLi06FVGBpYZpm1c=" crossorigin="anonymous"></script>
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0-rc.1/contrib/auto-render.min.js" integrity="sha256-TLdcLjbJwf/vIYaNuN5WjcVcPyLmTFxvIs2INCMHMJ8=" crossorigin="anonymous"></script>
 </head>
 <body>
   <div id='math'>
